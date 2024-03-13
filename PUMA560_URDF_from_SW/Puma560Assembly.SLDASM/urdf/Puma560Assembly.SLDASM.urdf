@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Puma560Assembly.SLDASM">
+  <link
+    name="Base">
+    <inertial>
+      <origin
+        xyz="-9.5375675712789E-11 0.0219617122304017 -0.431053573905224"
+        rpy="0 0 0" />
+      <mass
+        value="15.7867334753273" />
+      <inertia
+        ixx="0.550242340599426"
+        ixy="-2.86297347564858E-11"
+        ixz="-1.67434187689506E-10"
+        iyy="0.504236340051114"
+        iyz="0.0221623464429095"
+        izz="0.160712793493662" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.556862745098039 0.556862745098039 0.556862745098039 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="1.41675393793207E-07 -0.0324151221357329 -0.00257923883569677"
+        rpy="0 0 0" />
+      <mass
+        value="4.79584398604334" />
+      <inertia
+        ixx="0.0336188639050921"
+        ixy="1.31362539690621E-07"
+        ixz="2.43082619989805E-07"
+        iyy="0.0143343837900718"
+        iyz="0.000401215452453475"
+        izz="0.0334525563049509" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Base" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.0827365245243107 -4.67758691494735E-05 0.235790389997105"
+        rpy="0 0 0" />
+      <mass
+        value="16.8466089089569" />
+      <inertia
+        ixx="0.097229719277659"
+        ixy="-7.88603972873542E-06"
+        ixz="-0.00434746079027176"
+        iyy="0.596573369371294"
+        iyz="-4.83833598122861E-05"
+        izz="0.659758111095017" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.0052297341910818 0.0888288362742098 1.56107505250302E-06"
+        rpy="0 0 0" />
+      <mass
+        value="4.60608344546843" />
+      <inertia
+        ixx="0.0826176311087695"
+        ixy="-0.00434000430668176"
+        ixz="3.90894550853629E-07"
+        iyy="0.00945164152646254"
+        iyz="2.15685172169216E-06"
+        izz="0.0876132839292218" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0.4318 0 0.15005"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="6.7156E-06 0 -0.032374"
+        rpy="0 0 0" />
+      <mass
+        value="0.46811" />
+      <inertia
+        ixx="0.00076421"
+        ixy="-8.1525E-21"
+        ixz="-9.5405E-09"
+        iyy="0.00072857"
+        iyz="-1.0289E-19"
+        izz="0.00046373" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.25098 0.25098 0.25098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="0.0203 0.4318 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="-9.12189157542542E-10 0.00407444437284865 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0650895244227733" />
+      <inertia
+        ixx="2.24205168785061E-05"
+        ixy="3.6459481165397E-12"
+        ixz="1.43254145732281E-11"
+        iyy="1.50260384137487E-05"
+        iyz="-7.11520811693678E-22"
+        izz="2.48021549683133E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.435294117647059 1 0.988235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="0 -1.1102E-16 0.047436"
+        rpy="0 0 0" />
+      <mass
+        value="0.012317" />
+      <inertia
+        ixx="1.1379E-06"
+        ixy="2.351E-38"
+        ixz="4.7391E-23"
+        iyy="1.1379E-06"
+        iyz="2.1013E-22"
+        izz="1.9402E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Puma560Assembly.SLDASM/meshes/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint6"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
