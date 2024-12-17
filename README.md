@@ -12,4 +12,5 @@ SIMULINK_slx_by_simscape		          ：URDF文件通过Simscape导入Simulink后
 Trajectory_Planning_of_PUMA560	  ：PUMA560轨迹规划函数和验证、仿真的脚本  
 ## 联系
 项目文档：https://www.wolai.com/zgzhou/es57cqjYW8PHawQsrKXk5G
+
 联系邮箱：zhouzge@foxmail.com
